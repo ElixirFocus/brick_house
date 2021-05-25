@@ -1,7 +1,9 @@
 # Hugo default output directory
 # Usig submodule for public
 # git submodule add -b main https://github.com/phoenix-by-example/phoenix-by-example.github.io.git public
-/public
+
+# We will not ignore this and use a submodule for it.
+#/public
 
 /resources/_gen
 
