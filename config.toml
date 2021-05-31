@@ -28,7 +28,7 @@ pygmentsUseClasses = true
     weight = 20
 
 [permalinks]
-  posts = "/posts/:title/"
+  posts = "/posts/:slug/"
 
 [markup.goldmark.renderer]
   # Allow HTML in Markdown
