@@ -2,4 +2,4 @@
 title: "Home"
 ---
 
-Educational content for Elixir engineers.
+**ElixirFocus** provides educational content for Elixir developers looking to evolve their coding skills.

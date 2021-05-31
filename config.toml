@@ -7,7 +7,7 @@ pygmentsCodeFences = true
 pygmentsUseClasses = true
 
 [params]
-  description = "Educational content for Elixir engineers."
+  description = "ElixirFocus provides educational content for Elixir developers looking to evolve their coding skills."
   copyright = "Copyright © 2021 ElixirFocus"
   dark = "auto"
   highlight = true
