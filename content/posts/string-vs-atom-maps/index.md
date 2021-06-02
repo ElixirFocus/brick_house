@@ -1,5 +1,5 @@
 ---
-title: "String-based Maps vs Atom-based Maps"
+title: "Understanding when to use String-based Maps vs Atom-based Maps"
 slug: string-vs-atom-maps
 date: 2021-05-31T10:56:17-04:00
 pain: "confusion about lack of consistency regarding string-based maps vs atom-based maps"
