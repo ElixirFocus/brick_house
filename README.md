@@ -8,7 +8,7 @@ A place to stack some bricks, aka: the public website for ElixirFocus.
 
 Make a new post.
 
-    $ hugo new posts/some-topic/index.md
+    $ hugo new posts/programming-terminology/index.md
 
 Run the server locally.
 

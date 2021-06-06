@@ -240,6 +240,7 @@ main#content blockquote {
 
 main#content code,
 main#content pre {
+    color: #c00;
     font-family: 'Menlo', monospace;
 }
 
