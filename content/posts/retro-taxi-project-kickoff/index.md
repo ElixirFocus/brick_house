@@ -18,7 +18,7 @@ From the [pitch document](https://github.com/phoenix-by-example/retro_taxi/blob/
 > * **One-time use boards** over detailed historic archives.
 > * **Conversations** over analytical measurements or note taking.
 > * **A responsive web experience** over platform-specific apps.
-fast, even for larger repositories
+
 RetroTaxi will utilize [Phoenix LiveView](https://hexdocs.pm/phoenix_live_view/Phoenix.LiveView.html) fairly heavily and should be a useful source of topics to discuss.
 
 ## Project Goals
