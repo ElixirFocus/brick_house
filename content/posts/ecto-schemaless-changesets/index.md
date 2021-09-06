@@ -13,7 +13,11 @@ promise: after reading this post, you'll be able to break down complex needs of 
 
 It is a story we can all relate with. A new app is born using `mix phx.new hello`. 
 
-Some `mix phx.gen` generators are used to begin to shape a solution, perhaps something like: `mix phx.gen.html Blog Post posts body:string word_count:integer`.
+Some `mix phx.gen` generators are used to begin to shape a solution, perhaps something like: 
+
+```bash
+$ mix phx.gen.html Blog Post posts body:string word_count:integer
+```
 
 And then over time the `Post` schema grows. Different web forms are needed and so multiple `changeset` functions are added for the diverging user tasks.
 
