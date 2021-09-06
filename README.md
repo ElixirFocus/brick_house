@@ -8,8 +8,8 @@ A place to stack some bricks, aka: the public website for ElixirFocus.
 
 Make a new post.
 
-    $ hugo new posts/retro-taxi-project-sept-2021-update/index.md
+    $ hugo new posts/ecto-schemaless-changesets/index.md
 
 Run the server locally.
 
-    $ hugo server
+    $ hugo server --buildDrafts --buildFuture
