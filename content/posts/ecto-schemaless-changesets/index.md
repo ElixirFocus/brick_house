@@ -20,7 +20,7 @@ Some `mix phx.gen` generators are used to begin to shape a solution, perhaps som
 $ mix phx.gen.html Blog Post posts body:string word_count:integer
 ```
 
-And then over time the `Post` schema grows. Different web forms are needed and so multiple `changeset` functions are added for the diverging user tasks.
+And then over time the `Post` schema grows. Different web forms are needed and so multiple `changeset` functions are added for the diverging user tasks. You might even start adding `virtual` fields to schemas just to handle web form needs.
 
 It gets to a point where no one wants to edit or refactor the schema since it has grown too large and complex. 
 
@@ -128,8 +128,15 @@ The one issue you may run into with this schemaless changeset approach is that a
 
     case changeset.valid? do
       false ->
+        # In the first published version of this post we edited the `action` directly but
+        # it is probably safer to use the defined `apply_action` function, though the 
+        # result is pretty much the same.
+        # {:error, %{changeset | action: :insert}}
+
         # We need to force an action value so the Phoenix forms will display the errors.
-        {:error, %{changeset | action: :insert}}
+        # Code is more explicit here for demonstration purposes.        
+        {:error, changeset_with_action} = Ecto.Changeset.apply_action(changeset, :insert)
+        {:error, changeset_with_action}
 
       true ->
         # Perform the actual request.
@@ -139,4 +146,4 @@ The one issue you may run into with this schemaless changeset approach is that a
 
 ## Conclusion 
 
-With schemaless changesets you have the power to hand craft validations for specific web form presentations and define firm boundaries of responsibilities between your web presentation layer and the business-specific contexts of your app. Lots of people will not invest in this separation of concerns, and depending on the life-cycle of the application and the needs of your users that might be fine. If however, you find yourself making multiple flavors of changeset for your business nouns and various web forms -- it might be time to rethink your approach.
+With schemaless changesets you have the power to hand craft validations for specific web form presentations and define firm boundaries of responsibilities between your web presentation layer and the business-specific contexts of your app. Lots of people will not invest in this separation of concerns, and depending on the life-cycle of the application and the needs of your users that might be fine. If however, you find yourself making multiple flavors of changeset or adding lots of `virtual` fields to a schema just to make the web forms fit in -- it might be time to rethink your approach.
