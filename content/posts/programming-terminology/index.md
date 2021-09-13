@@ -2,6 +2,7 @@
 title: "Improve the Clarity of Your Elixir Code Through Expressive and Consistent Language"
 slug: "programming-terminology"
 date: 2021-06-06T12:00:00-04:00
+tags: [terminology, naming]
 ---
 
 One of our primary day-to-day responsibilities as programmers is to communicate. We need to express our ideas, explain our work and document our code. Having a strong vocabulary and explicit intentions behind the words you (and your team) choose can greatly help avoid confusion. 

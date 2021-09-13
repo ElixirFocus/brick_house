@@ -8,7 +8,7 @@ A place to stack some bricks, aka: the public website for ElixirFocus.
 
 Make a new post.
 
-    $ hugo new posts/ecto-schemaless-changesets/index.md
+    $ hugo new posts/parameters-vs-attributes/index.md
 
 Run the server locally.
 
