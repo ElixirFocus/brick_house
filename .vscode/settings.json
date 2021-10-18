@@ -1,3 +1,10 @@
 {
-  "cSpell.words": ["changesets", "Struct"]
+  "cSpell.words": [
+    "changesets",
+    "esbuild",
+    "heex",
+    "incosesticies",
+    "leex",
+    "Struct"
+  ]
 }
